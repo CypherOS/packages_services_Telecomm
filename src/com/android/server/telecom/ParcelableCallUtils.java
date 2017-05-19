@@ -156,7 +156,6 @@ public class ParcelableCallUtils {
                 call.getCannedSmsResponses(),
                 capabilities,
                 properties,
-                supportedAudioRoutes,
 				call.getCreationTimeMillis(),
                 connectTimeMillis,
                 handle,
@@ -173,7 +172,8 @@ public class ParcelableCallUtils {
                 call.getVideoState(),
                 conferenceableCallIds,
                 call.getIntentExtras(),
-                call.getExtras());
+                call.getExtras(),
+				supportedAudioRoutes);
     }
 
     private static int getParcelableState(Call call, boolean supportsExternalCalls) {
